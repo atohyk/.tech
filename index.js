@@ -10,7 +10,7 @@ app.use(express.static('public'));
 app.use('/things', things);
 
 app.get('/',function(req,res){
-	res.send('Main Page');
+	res.send('Main Main Page');
 });
 
 app.get('/first_template', function(req,res){
@@ -23,7 +23,7 @@ app.get('/imgtest', function(req,res){
 
 //catch all for 404
 app.get('*', function(req, res){
-	res.send('The New Main Page');
+	res.send('Invalid URL');
 });
 
 app.listen(8080);
