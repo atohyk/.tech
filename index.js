@@ -19,7 +19,7 @@ app.get('/imgtest', function(req,res){
 
 //catch all for 404
 app.get('*', function(req, res){
-	res.send('Unfound 404');
+	res.send('The New Main Page');
 });
 
 app.listen(8080);
