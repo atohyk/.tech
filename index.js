@@ -9,6 +9,10 @@ app.use(express.static('public'));
 
 app.use('/things', things);
 
+app.get('/',function(req,res){
+	res.send('Main Page');
+});
+
 app.get('/first_template', function(req,res){
 	res.render('first_view');
 });
